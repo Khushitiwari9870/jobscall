@@ -1,0 +1,20 @@
+[Unit]
+Description=Jobscall Django Backend
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/jobscall/backend
+Environment="PATH=/var/www/jobscall/backend/venv/bin"
+EnvironmentFile=/etc/jobscall/.env
+
+ExecStart=/var/www/jobscall/backend/venv/bin/gunicorn \
+    --config /var/www/jobscall/deployment/backend/gunicorn_config.py \
+    jobscall.wsgi:application
+
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target

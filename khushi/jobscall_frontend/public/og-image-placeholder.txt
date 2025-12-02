@@ -1,0 +1,29 @@
+# Jobs Call - Open Graph Image Placeholder
+
+This is a placeholder for the Open Graph image. 
+Replace this with an actual 1200x630px image that represents your brand.
+
+## Image Requirements:
+- Dimensions: 1200x630px
+- Format: JPG or PNG
+- File size: Under 1MB
+- Content: Should include Jobs Call logo and branding
+- Text: Should be readable when shared on social media
+
+## Current placeholder location:
+/public/og-image.jpg
+
+## Usage:
+This image will be used when your pages are shared on:
+- Facebook
+- Twitter
+- LinkedIn
+- WhatsApp
+- Other social media platforms
+
+## Design Tips:
+- Use high contrast colors
+- Keep text minimal and large
+- Include your logo prominently
+- Use your brand colors (#2563eb)
+- Test how it looks when cropped to different aspect ratios

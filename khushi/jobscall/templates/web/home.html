@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Home • JobsCall{% endblock %}
+
+{% block content %}
+  <h1>Find your next job</h1>
+
+  <section>
+    <h2>Latest Jobs</h2>
+    {% if latest_jobs %}
+      <ul>
+        {% for job in latest_jobs %}
+          <li>
+            <a href="/jobs/{{ job.id }}/">{{ job.title }}</a>
+            {% if job.company %} at {{ job.company.name }}{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No jobs yet.</p>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2>Featured Companies</h2>
+    {% if featured_companies %}
+      <ul>
+        {% for c in featured_companies %}
+          <li><a href="/companies/">{{ c.name }}</a></li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No featured companies yet.</p>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2>Cool Places</h2>
+    {% if cool_places %}
+      <ul>
+        {% for p in cool_places %}
+          <li>{{ p.name }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>Coming soon.</p>
+    {% endif %}
+  </section>
+{% endblock %}

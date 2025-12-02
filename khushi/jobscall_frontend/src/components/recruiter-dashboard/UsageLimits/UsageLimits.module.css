@@ -1,0 +1,119 @@
+.container {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 1.25rem 0;
+}
+
+.usageList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.usageItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.usageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usageLabel {
+  font-size: 0.9rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.usageCount {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.progressBar {
+  width: 100%;
+  height: 6px;
+  background-color: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.percentage {
+  font-size: 0.8rem;
+  color: #6b7280;
+  align-self: flex-end;
+  margin-top: -0.25rem;
+}
+
+.upgradeButton {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.upgradeButton:hover {
+  background-color: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+.upgradeButton:active {
+  transform: translateY(1px);
+}
+
+.upgradeButton::before {
+  content: '🚀';
+  font-size: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.25rem;
+  }
+  
+  .title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .usageList {
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .upgradeButton {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+  }
+}

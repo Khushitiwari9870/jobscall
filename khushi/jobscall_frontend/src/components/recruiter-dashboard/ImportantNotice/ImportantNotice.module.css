@@ -1,0 +1,55 @@
+.noticeBanner {
+  background-color: #fef3c7;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.noticeContent {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  position: relative;
+}
+
+.noticeIcon {
+  color: #d97706;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.noticeText {
+  color: #92400e;
+  font-size: 14px;
+  line-height: 1.5;
+  flex-grow: 1;
+  padding-right: 20px;
+}
+
+.noticeText strong {
+  font-weight: 600;
+}
+
+.dismissButton {
+  background: none;
+  border: none;
+  color: #92400e;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dismissButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dismissButton:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}

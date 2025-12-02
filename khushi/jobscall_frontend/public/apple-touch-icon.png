@@ -1,0 +1,8 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" rx="40" fill="#2563eb"/>
+  <path d="M45 67.5h90v11.25H45V67.5zm0 22.5h90v11.25H45V90zm0 22.5h67.5v11.25H45V112.5z" fill="white"/>
+  <circle cx="123.75" cy="56.25" r="16.875" fill="#fbbf24"/>
+  <text x="123.75" y="64.5" text-anchor="middle" fill="#2563eb" font-family="Arial, sans-serif" font-size="18" font-weight="bold">JC</text>
+</svg>
+
+

@@ -1,0 +1,150 @@
+/* src/components/layout/Header.module.css */
+.header {
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .topBar {
+    background: linear-gradient(90deg, #7e3ff2, #5e35b1);
+    color: white;
+    font-size: 14px;
+    padding: 8px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .topBarContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .topBarLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .badge {
+    background: #ffc107;
+    color: #333;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+  }
+  
+  .learnMore {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .learnMore:hover {
+    text-decoration: underline;
+  }
+  
+  .mainHeader {
+    padding: 12px 0;
+  }
+  
+  .headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #7e3ff2;
+    text-decoration: none;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .navLink {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .navLink:hover,
+  .navLink.active {
+    color: #7e3ff2;
+    background: #f5f0ff;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .iconButton {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    padding: 4px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .iconButton:hover {
+    background: #f5f5f5;
+  }
+  
+  .notificationBadge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ff3b30;
+    color: white;
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 2px 5px;
+    min-width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  .avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }

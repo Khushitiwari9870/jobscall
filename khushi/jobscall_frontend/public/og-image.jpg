@@ -1,0 +1,70 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="50" fill="white" opacity="0.1"/>
+  <circle cx="1100" cy="530" r="80" fill="white" opacity="0.1"/>
+  <circle cx="200" cy="500" r="30" fill="white" opacity="0.1"/>
+  
+  <!-- Main content area -->
+  <rect x="100" y="150" width="1000" height="330" rx="20" fill="white" opacity="0.95"/>
+  
+  <!-- Logo area -->
+  <rect x="150" y="200" width="80" height="80" rx="15" fill="#2563eb"/>
+  <path d="M170 230h40v8H170v-8zm0 16h40v8H170v-8zm0 16h30v8H170v-8z" fill="white"/>
+  <circle cx="210" cy="220" r="12" fill="#fbbf24"/>
+  <text x="210" y="226" text-anchor="middle" fill="#2563eb" font-family="Arial, sans-serif" font-size="12" font-weight="bold">JC</text>
+  
+  <!-- Main title -->
+  <text x="280" y="250" fill="#1f2937" font-family="Arial, sans-serif" font-size="48" font-weight="bold">Jobs Call</text>
+  
+  <!-- Subtitle -->
+  <text x="280" y="290" fill="#6b7280" font-family="Arial, sans-serif" font-size="24">India's Trusted Job Portal</text>
+  
+  <!-- Description -->
+  <text x="280" y="330" fill="#4b5563" font-family="Arial, sans-serif" font-size="18">Find your dream job with thousands of opportunities</text>
+  <text x="280" y="360" fill="#4b5563" font-family="Arial, sans-serif" font-size="18">across all industries. Connect with top employers today!</text>
+  
+  <!-- Call to action -->
+  <rect x="280" y="380" width="200" height="50" rx="25" fill="url(#accent)"/>
+  <text x="380" y="410" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Start Your Journey</text>
+  
+  <!-- Job icons -->
+  <rect x="600" y="200" width="60" height="60" rx="10" fill="#e5e7eb"/>
+  <path d="M620 220h20v4H620v-4zm0 8h20v4H620v-4zm0 8h15v4H620v-4z" fill="#6b7280"/>
+  
+  <rect x="700" y="200" width="60" height="60" rx="10" fill="#e5e7eb"/>
+  <path d="M720 220h20v4H720v-4zm0 8h20v4H720v-4zm0 8h15v4H720v-4z" fill="#6b7280"/>
+  
+  <rect x="800" y="200" width="60" height="60" rx="10" fill="#e5e7eb"/>
+  <path d="M820 220h20v4H820v-4zm0 8h20v4H820v-4zm0 8h15v4H820v-4z" fill="#6b7280"/>
+  
+  <!-- Stats -->
+  <text x="600" y="300" fill="#1f2937" font-family="Arial, sans-serif" font-size="32" font-weight="bold">10,000+</text>
+  <text x="600" y="330" fill="#6b7280" font-family="Arial, sans-serif" font-size="16">Active Jobs</text>
+  
+  <text x="750" y="300" fill="#1f2937" font-family="Arial, sans-serif" font-size="32" font-weight="bold">500+</text>
+  <text x="750" y="330" fill="#6b7280" font-family="Arial, sans-serif" font-size="16">Companies</text>
+  
+  <text x="900" y="300" fill="#1f2937" font-family="Arial, sans-serif" font-size="32" font-weight="bold">50K+</text>
+  <text x="900" y="330" fill="#6b7280" font-family="Arial, sans-serif" font-size="16">Job Seekers</text>
+  
+  <!-- Bottom accent -->
+  <rect x="0" y="580" width="1200" height="50" fill="url(#accent)" opacity="0.8"/>
+  <text x="600" y="610" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">jobscall.com</text>
+</svg>
+
+

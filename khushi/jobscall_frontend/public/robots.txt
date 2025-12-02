@@ -1,0 +1,57 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /dashboard/
+Disallow: /settings/
+Disallow: /profile/
+Disallow: /messages/
+Disallow: /workspace/
+Disallow: /email-dashboard/
+Disallow: /ivr-dashboard/
+Disallow: /recruiter-dashboard/
+Disallow: /analytics/
+Disallow: /activity/
+Disallow: /folders/
+Disallow: /folder/
+Disallow: /interviews/
+Disallow: /usage-limit/
+Disallow: /verification/
+Disallow: /email-sms/
+Disallow: /email-template/
+Disallow: /email-templates/
+Disallow: /ivr-templates/
+Disallow: /manage-jobs/
+Disallow: /starred-candidates/
+Disallow: /saved-searches/
+Disallow: /recent-searches/
+Disallow: /job-alerts/
+Disallow: /find-candidates/
+Disallow: /find-immediate-candidates/
+Disallow: /immediate-candidates/
+Disallow: /application-highlighter/
+
+# Allow important pages
+Allow: /jobs/
+Allow: /companies/
+Allow: /about/
+Allow: /contact/
+Allow: /pricing/
+Allow: /blog/
+Allow: /career-advice/
+Allow: /career-guidance/
+Allow: /courses/
+Allow: /faq/
+Allow: /privacy/
+Allow: /terms/
+Allow: /cookies/
+Allow: /gdpr/
+Allow: /solutions/
+
+# Sitemap location
+Sitemap: https://jobscall.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

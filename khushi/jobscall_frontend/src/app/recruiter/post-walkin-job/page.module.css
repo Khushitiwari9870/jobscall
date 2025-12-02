@@ -1,0 +1,184 @@
+/* app/recruiter/post-walkin-job/page.module.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .layout {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .mainContent {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .formControl {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .richTextEditor {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 200px;
+  }
+  
+  .skillsContainer {
+    margin-top: 10px;
+  }
+  
+  .skillsInputContainer {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .skillTag {
+    display: inline-flex;
+    align-items: center;
+    background: #e9ecef;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
+  .removeSkill {
+    margin-left: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .jobTypeSelector {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .jobTypeButton {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .jobTypeButton.active {
+    background: #0070f3;
+    color: white;
+    border-color: #0070f3;
+  }
+  
+  .formActions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+  
+  .publishButton,
+  .draftButton,
+  .cancelButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .publishButton {
+    background: #0070f3;
+    color: white;
+  }
+  
+  .draftButton {
+    background: #f0f0f0;
+    color: #333;
+  }
+  
+  .cancelButton {
+    background: none;
+    color: #666;
+    text-decoration: underline;
+  }
+  
+  .termsCheckbox {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 8px;
+  }
+  
+  .checkbox {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .previewSection,
+  .recruiterSection,
+  .companySection {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .layout {
+      flex-direction: column;
+    }
+    
+    .formActions {
+      flex-direction: column;
+    }
+    
+    .termsCheckbox {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }

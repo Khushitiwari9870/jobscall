@@ -1,0 +1,142 @@
+.stickyBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid #e0e0e0;
+  padding: 12px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.label {
+  font-size: 14px;
+  color: #555;
+  white-space: nowrap;
+}
+
+.dropdown {
+  position: relative;
+  min-width: 120px;
+}
+
+.dropdown::after {
+  content: '▼';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 10px;
+  color: #666;
+  pointer-events: none;
+}
+
+.select {
+  width: 100%;
+  padding: 8px 30px 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  appearance: none;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #6e41e2;
+  box-shadow: 0 0 0 2px rgba(110, 65, 226, 0.1);
+}
+
+.rightSection {
+  display: flex;
+  gap: 12px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.buttonIcon {
+  font-size: 16px;
+}
+
+.primary {
+  background-color: #6e41e2;
+  color: white;
+  border-color: #6e41e2;
+}
+
+.primary:hover {
+  background-color: #5d35c9;
+  border-color: #5d35c9;
+}
+
+.secondary {
+  background-color: white;
+  color: #6e41e2;
+  border: 1px solid #6e41e2;
+}
+
+.secondary:hover {
+  background-color: #f9f5ff;
+}
+
+.betaBadge {
+  background-color: #f0e6ff;
+  color: #6e41e2;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 4px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+  .leftSection {
+    justify-content: space-between;
+  }
+  
+  .rightSection {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .button {
+    justify-content: center;
+    padding: 10px 16px;
+  }
+}

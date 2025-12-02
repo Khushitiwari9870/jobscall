@@ -1,0 +1,125 @@
+.header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 32px;
+  width: auto;
+}
+
+.mainNav {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+  margin: 0 32px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 0;
+  position: relative;
+}
+
+.navItem:hover {
+  color: #6e41e2;
+}
+
+.dropdownIcon {
+  margin-left: 4px;
+  font-size: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.actionButton {
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileButton {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #555;
+}
+
+.subNav {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  padding: 8px 24px;
+}
+
+.searchLinks {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.searchLink {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.searchLink:hover {
+  color: #6e41e2;
+  text-decoration: underline;
+}
+
+.divider {
+  color: #dee2e6;
+}
+
+@media (max-width: 1024px) {
+  .mainNav {
+    display: none;
+  }
+  
+  .topBar {
+    padding: 12px 16px;
+  }
+  
+  .actions {
+    margin-left: auto;
+  }
+}

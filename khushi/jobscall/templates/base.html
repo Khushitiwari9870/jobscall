@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}JobsCall{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">JobsCall</a>
+      <a href="/jobs/">Jobs</a>
+      <a href="/companies/">Companies</a>
+      <a href="/learning/">Learning</a>
+    </nav>
+  </header>
+
+  {% if messages %}
+  <section>
+    <ul>
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <p>&copy; {{ now|date:'Y' }} JobsCall</p>
+  </footer>
+</body>
+</html>

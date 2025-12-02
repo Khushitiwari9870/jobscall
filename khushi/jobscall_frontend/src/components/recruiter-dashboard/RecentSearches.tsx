@@ -1,0 +1,39 @@
+import React from 'react';
+import styles from './RecentSearches/RecentSearches.module.css';
+
+const RecentSearches = () => {
+  // Sample data - replace with your actual data
+  const recentSearches = [
+    { id: 1, title: 'React Developer', location: 'Bangalore, India' },
+    { id: 2, title: 'Node.js Developer', location: 'Remote' },
+    { id: 3, title: 'UI/UX Designer', location: 'Mumbai, India' },
+    { id: 4, title: 'Full Stack Developer', location: 'Pune, India' },
+  ];
+
+  return (
+    <div className={styles.recentSearches}>
+      <div className={styles.header}>
+        <h3>Recent Searches</h3>
+        <button className={styles.clearButton}>Clear All</button>
+      </div>
+      <ul className={styles.searchList}>
+        {recentSearches.map((search) => (
+          <li key={search.id} className={styles.searchItem}>
+            <div className={styles.searchIcon}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#4B5563" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M21 21L16.65 16.65" stroke="#4B5563" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+            <div className={styles.searchInfo}>
+              <div className={styles.searchTitle}>{search.title}</div>
+              <div className={styles.searchLocation}>{search.location}</div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default RecentSearches;

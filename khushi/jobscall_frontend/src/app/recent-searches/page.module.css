@@ -1,0 +1,419 @@
+/* app/recent-searches/page.module.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9fafb;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .logoSection h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #2563eb;
+    margin: 0;
+  }
+  
+  .navTabs {
+    display: flex;
+    gap: 1rem;
+    background-color: #f3f4f6;
+    padding: 0.25rem;
+    border-radius: 8px;
+  }
+  
+  .tab {
+    padding: 0.625rem 1.25rem;
+    border: none;
+    background: none;
+    color: #4b5563;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s;
+    font-size: 0.9375rem;
+  }
+  
+  .tab:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .activeTab {
+    background-color: white;
+    color: #2563eb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Search Section */
+  .searchSection {
+    margin-bottom: 1.5rem;
+  }
+  
+  .searchContainer {
+    display: flex;
+    gap: 1rem;
+    max-width: 100%;
+  }
+  
+  .searchInputContainer {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchIcon {
+    position: absolute;
+    left: 1rem;
+    color: #9ca3af;
+    pointer-events: none;
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.9375rem;
+    transition: all 0.2s;
+  }
+  
+  .searchInput:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+  
+  .recruiterSelect {
+    min-width: 200px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.9375rem;
+    background-color: white;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1.25em 1.25em;
+    padding-right: 2.5rem;
+  }
+  
+  .searchButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 1.25rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .searchButton:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .buttonIcon {
+    font-size: 1rem;
+  }
+  
+  /* Results Header */
+  .resultsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .resultsCount {
+    color: #4b5563;
+    font-size: 0.9375rem;
+  }
+  
+  /* Search Results */
+  .resultsContainer {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+  .searchList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .searchItem {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid #f3f4f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .searchItem:last-child {
+    border-bottom: none;
+  }
+  
+  .searchContent {
+    flex: 1;
+  }
+  
+  .searchQuery {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    color: #111827;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.4;
+  }
+  
+  .searchMeta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.8125rem;
+    color: #6b7280;
+  }
+  
+  .searchUser {
+    font-weight: 500;
+  }
+  
+  .searchTime {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+  }
+  
+  .timeIcon {
+    font-size: 0.875rem;
+  }
+  
+  .searchFilters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+  
+  .filterTag {
+    background-color: #f3f4f6;
+    color: #4b5563;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    white-space: nowrap;
+  }
+  
+  .searchActions {
+    display: flex;
+    gap: 0.75rem;
+    flex-shrink: 0;
+  }
+  
+  .actionButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.875rem;
+    background-color: white;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    color: #4b5563;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .actionButton:hover {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+  }
+  
+  .actionButton.saved {
+    background-color: #eff6ff;
+    border-color: #bfdbfe;
+    color: #1d4ed8;
+  }
+  
+  .actionButton.saved:hover {
+    background-color: #dbeafe;
+  }
+  
+  .shareButton {
+    padding: 0.5rem;
+  }
+  
+  .actionIcon {
+    font-size: 1rem;
+  }
+  
+  /* No Results */
+  .noResults {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    color: #6b7280;
+  }
+  
+  /* Pagination */
+  .paginationContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .pagination {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .pageButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    color: #4b5563;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .pageButton:hover:not(.disabled) {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+  }
+  
+  .pageButton.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .pageNumbers {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .pageNumber {
+    min-width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: none;
+    border: none;
+    color: #4b5563;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .pageNumber:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .pageNumber.activePage {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .ellipsis {
+    padding: 0 0.5rem;
+    color: #9ca3af;
+    user-select: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 1.5rem 1rem;
+    }
+  
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .navTabs {
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 0.25rem;
+    }
+  
+    .searchContainer {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  
+    .searchInput,
+    .recruiterSelect,
+    .searchButton {
+      width: 100%;
+    }
+  
+    .searchItem {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .searchActions {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  
+    .pagination {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .pageNumbers {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .searchMeta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+    }
+  
+    .searchActions {
+      flex-direction: column;
+    }
+  
+    .actionButton {
+      justify-content: center;
+      width: 100%;
+    }
+  }

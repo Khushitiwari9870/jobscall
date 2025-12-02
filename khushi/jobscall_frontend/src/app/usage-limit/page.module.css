@@ -1,0 +1,258 @@
+/* app/usage-limit/page.module.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fafb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .header h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+  }
+  
+  /* Tabs */
+  .tabs {
+    display: flex;
+    background-color: #f3f4f6;
+    border-radius: 6px;
+    padding: 4px;
+  }
+  
+  .tab {
+    padding: 0.5rem 1.25rem;
+    border: none;
+    background: none;
+    color: #4b5563;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  
+  .tab:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .activeTab {
+    background-color: white;
+    color: #2563eb;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Usage Grid */
+  .usageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    flex: 1;
+  }
+  
+  /* Usage Card */
+  .usageCard {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .usageCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+  }
+  
+  .cardHeader h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+  }
+  
+  .helpButton {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 50%;
+    transition: color 0.2s;
+  }
+  
+  .helpButton:hover {
+    color: #4b5563;
+  }
+  
+  /* No Access State */
+  .noAccess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  
+  .warningIcon {
+    color: #f59e0b;
+    margin-bottom: 0.75rem;
+  }
+  
+  .noAccess p {
+    color: #6b7280;
+    margin: 0 0 1rem 0;
+    font-size: 0.9375rem;
+  }
+  
+  .ctaButton {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .ctaButton:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* Usage Content */
+  .usageContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .usageMeter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .meterHeader {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #4b5563;
+  }
+  
+  .progressBar {
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progressFill {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+    border-radius: 4px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: auto;
+    padding: 2rem 0 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .footerLinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footerLink {
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s;
+  }
+  
+  .footerLink:hover {
+    color: #2563eb;
+  }
+  
+  .divider {
+    color: #d1d5db;
+    user-select: none;
+  }
+  
+  .contactInfo {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  .contactInfo p {
+    margin: 0.25rem 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .tabs {
+      width: 100%;
+    }
+  
+    .tab {
+      flex: 1;
+      text-align: center;
+    }
+  
+    .usageGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .footerLinks {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  
+    .divider {
+      display: none;
+    }
+  }
